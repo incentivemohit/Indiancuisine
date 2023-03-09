@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/indiancuisine/static/css/main.9ad659fd.css",
-    "main.js": "/indiancuisine/static/js/main.0c998bfb.js",
-    "static/media/mkk.jpg": "/indiancuisine/static/media/mkk.28c61b3a90786da767f8.jpg",
-    "static/media/logo.jpg": "/indiancuisine/static/media/logo.2face3779009d1a8f371.jpg",
-    "index.html": "/indiancuisine/index.html",
-    "main.9ad659fd.css.map": "/indiancuisine/static/css/main.9ad659fd.css.map",
-    "main.0c998bfb.js.map": "/indiancuisine/static/js/main.0c998bfb.js.map"
+    "main.css": "/IndianCuisine/static/css/main.d0db83a9.css",
+    "main.js": "/IndianCuisine/static/js/main.cdc9c3f5.js",
+    "static/media/mkk.jpg": "/IndianCuisine/static/media/mkk.28c61b3a90786da767f8.jpg",
+    "static/media/logo.jpg": "/IndianCuisine/static/media/logo.2face3779009d1a8f371.jpg",
+    "index.html": "/IndianCuisine/index.html",
+    "main.d0db83a9.css.map": "/IndianCuisine/static/css/main.d0db83a9.css.map",
+    "main.cdc9c3f5.js.map": "/IndianCuisine/static/js/main.cdc9c3f5.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ad659fd.css",
-    "static/js/main.0c998bfb.js"
+    "static/css/main.d0db83a9.css",
+    "static/js/main.cdc9c3f5.js"
   ]
 }
