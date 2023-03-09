@@ -29,20 +29,41 @@
   #logo {
     font-size: 27px;
   }
+
+  .top-content-image {
+    padding-top: 170px;
+  }
+
+  .homepage-top-content {
+    margin-top: 75px;
+    height: 400px;
+    background-color: aqua;
+    position: relative;
+  }
+
+  .homepage-top-image-details {
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    font-size: 20px;
+    color: white;
+  }
+
   #product-card {
     width: 250px;
     height: 300px;
   }
-  #carouselExampleSlidesOnly {
-    padding-top: 160px;
+
+  .products-menu-card {
+    width: 200px;
   }
-  #products-menu {
-    padding-top: 150px;
+
+  .leftsidebar-container {
+    display: none;
   }
+
   #searchResults {
-    padding-top: 158px;
-  }
-  #cart-page {
     padding-top: 158px;
   }
 
@@ -82,12 +103,48 @@
   .item-image {
     height: 300px;
   }
+  .top-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cart-left-sidebar {
+    display: none;
+  }
+  .total-amount-card {
+    width: 100%;
+  }
+  .order-cards {
+    margin-bottom: 10px;
+    margin-top: 92px;
+  }
+  .cart-image {
+    width: 100%;
+  }
+  .about {
+    margin-top: 80px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   #logo {
     font-size: 20px;
   }
+  .homepage-top-content {
+    margin-top: 75px;
+    height: 600px;
+    background-color: aqua;
+    position: relative;
+  }
+  .homepage-top-image-details {
+    z-index: 1;
+    position: absolute;
+    top: 12%;
+    left: 8%;
+    font-size: 35px;
+    color: white;
+  }
+
   .form-body {
     width: 350px;
     padding: 15px;
@@ -119,11 +176,19 @@
     width: 60rem;
     height: 380px;
   }
-  .menuIcon {
+  #menuButton {
     display: none;
   }
   .leftsidebar-container {
     width: 270px;
-    position: fixed;
+  }
+  .top-column {
+    display: flex;
+    justify-content: end;
+  }
+  .order-cards {
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 }

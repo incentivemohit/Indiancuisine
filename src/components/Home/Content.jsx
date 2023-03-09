@@ -1,17 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Carousel from "./Carousel";
 
 function Content() {
   return (
     <>
-      <Carousel />
-      <div id="main" className="my-2">
+      <div className="homepage-top-content">
+        <img
+          className="w-100 h-100 "
+          src={"/assets/images/HomePage/food2.jpg"}
+          alt=""
+        />
+        <div className="homepage-top-image-details w-50 p-2">
+          <p style={{ "font-family": "Pacifico ,cursive" }}>
+            <span style={{ fontSize: "66px" }}>O</span>ur aim is to spreading
+            the taste and love over the world. Join us today for Sharing your
+            delicious foods.
+          </p>
+          <Link to="/signup">
+            <button className="btn btn-warning w-50 p-1">
+              <h2>Signup</h2>
+            </button>
+          </Link>
+        </div>
+      </div>
+
+      <div id="main" className="my-2 mx-2">
         <div className="row  content-row">
           <div className="col">
             <div className="m-auto content-image">
               <img
-                src={"/assets/images/HomePageImages/hf2.jpg"}
+                src={"/assets/images/HomePage/hf2.jpg"}
                 className="w-100 h-100 "
                 alt=""
               />
@@ -57,7 +75,7 @@ function Content() {
           <div className="col">
             <div className="m-auto content-image">
               <img
-                src={"/assets/images/HomePageImages/hf4.jpg"}
+                src={"/assets/images/HomePage/hf4.jpg"}
                 className="w-100 h-100"
                 alt=""
               />
@@ -69,7 +87,7 @@ function Content() {
           <div className="col">
             <div className="m-auto content-image">
               <img
-                src={"/assets/images/HomePageImages/hf1.jpg"}
+                src={"/assets/images/HomePage/hf1.jpg"}
                 className="w-100 h-100"
                 alt=""
               />

@@ -4,16 +4,17 @@ import { ProductContext } from "../../Context";
 import "../../index.css";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import { Badge, Toolbar } from "@mui/material";
+import { Badge, Drawer, Toolbar } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import PersonIcon from "@mui/icons-material/Person";
-import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import DataUsageIcon from "@mui/icons-material/DataUsage";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-import DrawerSidebar from "../Sidebar/DrawerSidebar";
+import LockOpenIcon from "@mui/icons-material/LockOpen";
+import AppRegistrationIcon from "@mui/icons-material/AppRegistration";
+import DrawerSidebar from "../../components/Sidebar/DrawerSidebar";
 
 function Header() {
   const { counter, handleLinks, searchItems } = useContext(ProductContext);
@@ -34,7 +35,6 @@ function Header() {
         <Toolbar className="bg-white d-block">
           <Box className="row w-100 py-2">
             <Box className="col-md-2  d-flex justify-content-center align-items-center">
-              <span></span>
               <Box className="logo-box">
                 <Link
                   to="/"
@@ -66,7 +66,7 @@ function Header() {
               </Box>
             </Box>
 
-            <Box className="col-md-5 top-column d-flex justify-content-between  align-items-center">
+            <Box className="col-md-5 top-column">
               <div id="menuButton">
                 <DrawerSidebar />
               </div>
@@ -133,8 +133,12 @@ function Header() {
                       &nbsp; Order Status
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
-                      <ExitToAppIcon />
-                      &nbsp; Logout
+                      <LockOpenIcon />
+                      &nbsp; SignIn
+                    </MenuItem>
+                    <MenuItem onClick={handleClose}>
+                      <AppRegistrationIcon />
+                      &nbsp; SignUp
                     </MenuItem>
                   </Menu>
                 </div>

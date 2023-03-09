@@ -32,7 +32,7 @@ function Cart() {
       <div className="m-auto" style={{ paddingTop: "80px", width: "90%" }}>
         {orderList.length ? (
           <div className="row">
-            <div className="col-md-3 ">
+            <div className="col-md-3 cart-left-sidebar">
               <div className="overflow-auto vh-100">
                 <h4 className="text-center card p-2 bg-dark text-white mt-2">
                   Recommended
@@ -49,53 +49,52 @@ function Cart() {
                 ))}
               </div>
             </div>
-            <div className="col-md-6 overflow-auto vh-100">
-              {orderList.map((item) => {
-                return (
-                  <div className="card my-1">
-                    <div className="row ">
-                      <div className="col">
-                        <div className="cart-image">
-                          <img
-                            src={item.image}
-                            className="w-100 h-100"
-                            alt=""
-                          />
+            <div className="col-md-6 bg-warning">
+              <div className="order-cards">
+                {orderList.map((item) => {
+                  return (
+                    <div className="card my-1">
+                      <div className="row ">
+                        <div className="col">
+                          <div className="cart-image">
+                            <img
+                              src={item.image}
+                              className="w-100 h-100"
+                              alt=""
+                            />
+                          </div>
                         </div>
-                      </div>
-                      <div className="col">
-                        <h5 className="mt-2">{item.title}</h5>
-                        <div className="py-2 " style={{ fontSize: "16px" }}>
-                          <span className="">Quantity : </span>
-                          <button
-                            className="btn btn-primary "
-                            onClick={() => decreamentItem(item.id)}
-                          >
-                            -
-                          </button>
-                          <span className="px-2">{item.quantity}</span>
-                          <button
-                            className="btn btn-primary "
-                            onClick={() => increamentItem(item.id)}
-                          >
-                            +
-                          </button>
+                        <div className="col">
+                          <h5 className="mt-2">{item.title}</h5>
+                          <div className="py-2 " style={{ fontSize: "16px" }}>
+                            <span className="">Quantity : </span>
+                            <button
+                              className="btn btn-primary "
+                              onClick={() => decreamentItem(item.id)}
+                            >
+                              -
+                            </button>
+                            <span className="px-2">{item.quantity}</span>
+                            <button
+                              className="btn btn-primary "
+                              onClick={() => increamentItem(item.id)}
+                            >
+                              +
+                            </button>
+                          </div>
+                          <Rating />
+                          <h5 className="bg-dark text-white text-center mt-4 p-2 rounded w-75">
+                            Price : Rs. {item.price}
+                          </h5>
                         </div>
-                        <Rating />
-                        <h5 className="bg-dark text-white text-center mt-4 p-2 rounded w-75">
-                          Price : Rs. {item.price}
-                        </h5>
                       </div>
                     </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
             <div className="col-md-3">
-              <div
-                className="card p-3 position-fixed w-25"
-                style={{ zIndex: "1" }}
-              >
+              <div className="card p-3">
                 <p className="h5">Total Item : {counter}</p>
                 <p className="h5">Total Amount(in Rs.) : {total}</p>
                 <p className="h5 text-success">Free delievery on Rs.1000</p>

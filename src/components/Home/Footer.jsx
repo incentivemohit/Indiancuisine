@@ -70,6 +70,11 @@ function Footer() {
                 </ul>
               </div>
             </div>
+            <div className="footer-bottom">
+              <h4 className="text-center p-1 bg-white text-dark mt-1">
+                Developed By Mohit Kumar
+              </h4>
+            </div>
           </div>
         </div>
       </div>

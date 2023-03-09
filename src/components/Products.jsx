@@ -17,8 +17,8 @@ export default function Products() {
 
       <div className="container" style={{ paddingTop: "80px" }}>
         <div className="row">
-          <div className="col-md-3 ">
-            <div className="card leftsidebar-container ">
+          <div className="col-md-3 leftsidebar-container">
+            <div className="card  ">
               <div className="card-body">
                 <LeftSidebar />
               </div>
@@ -37,13 +37,13 @@ export default function Products() {
                   Popular Indian Foods
                 </h4>
                 <Swiper />
-                <div className="row" id="products-menu">
+                <div className="row mb-2" id="products-menu">
                   <h4 className="text-center card p-2 bg-dark text-white mt-2">
                     Top Indian Foods
                   </h4>
                   {foodItems.map((data) => (
                     <div
-                      className="col-md-4  my-1 d-flex justify-content-center align-items-center"
+                      className="col-6 col-sm-4  products-menu-card my-1 d-flex justify-content-center align-items-center"
                       key={data.id}
                     >
                       <ProductCard

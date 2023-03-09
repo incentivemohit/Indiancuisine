@@ -1,13 +1,14 @@
 import React from "react";
 import Header from "./Header";
 import img from "./mkk.jpg";
+import Footer from "../Home/Footer";
 
 function About() {
   return (
     <>
       <Header />
       <div
-        className=" d-flex justify-content-center align-items-center bg-dark"
+        className="about d-flex justify-content-center align-items-center bg-dark mb-2"
         style={{ height: "100vh" }}
       >
         <div className="card m-auto p-4 " style={{ height: "25rem" }}>
@@ -23,6 +24,7 @@ function About() {
           </p>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
