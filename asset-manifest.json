@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/indiancuisine/static/css/main.5092f356.css",
+    "main.js": "/indiancuisine/static/js/main.7a9ba704.js",
+    "static/media/mkk.jpg": "/indiancuisine/static/media/mkk.28c61b3a90786da767f8.jpg",
+    "static/media/logo.jpg": "/indiancuisine/static/media/logo.2face3779009d1a8f371.jpg",
+    "index.html": "/indiancuisine/index.html",
+    "main.5092f356.css.map": "/indiancuisine/static/css/main.5092f356.css.map",
+    "main.7a9ba704.js.map": "/indiancuisine/static/js/main.7a9ba704.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5092f356.css",
+    "static/js/main.7a9ba704.js"
+  ]
+}
